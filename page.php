@@ -22,8 +22,14 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
+			<?php if( is_front_page() ) { ?>
+
+				<?php get_template_part( 'sidebar', 'home' ); ?>
+
+			<?php } ?>
+
 		</main><!-- #main -->
-		
+
 	</div><!-- #primary -->
 
  
