@@ -1,0 +1,33 @@
+/* IE 8 and below */
+
+.header {
+	height:auto;
+}
+
+.main-navigation {
+	margin-top: 2.184em;
+}
+
+.main-navigation a {
+	font-size: 1.35em;
+}
+
+.hero .post.format-image {
+	background: no-repeat center middle cover;
+	background-position-x:center;
+}
+
+#home {
+
+}
+
+#bottom-pages .post:first-child + .post, #bottom-pages .post:first-child +.post +.post {
+	display: none;
+}
+
+#ribbon {
+	top:10.30em;
+	right:44.96em;
+	height:100%;
+
+}
