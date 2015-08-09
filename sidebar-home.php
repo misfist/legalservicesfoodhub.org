@@ -5,7 +5,7 @@
  * @package LFSH
  */
 ?>
-	<div id="home-widgets" class="widget-area" role="complementary">
+	<div id="home-widgets" class="widget-area row" role="complementary">
 		<?php dynamic_sidebar( 'home-1' ); ?>
 
 		<?php dynamic_sidebar( 'home-2' ); ?>
