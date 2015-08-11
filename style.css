@@ -2048,6 +2048,9 @@ figure img {
   color: #362E2A;
   font-size: 24px;
 }
+.home .entry-content {
+  padding: 25px 20px;
+}
 .home .entry-content h3 {
   color: #fff;
   font-family: "Open Sans", ​sans-serif;
