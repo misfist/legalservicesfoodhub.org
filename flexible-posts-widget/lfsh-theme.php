@@ -35,8 +35,9 @@ if( $flexible_posts->have_posts() ):
 						}
 					}
 				?>
-				<h4 class="title"><?php the_title(); ?></h4>
 			</a>
+			<?php the_excerpt( 'Read more...' ); ?>
+			
 		</li>
 	<?php endwhile; ?>
 	</ul><!-- .dpe-flexible-posts -->
