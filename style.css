@@ -2042,22 +2042,28 @@ figure img {
 .home .home-image-caption {
   position: absolute;
   bottom: 0;
-  padding: 28px 80px;
+  padding: 14px 80px;
   width: 65.4306666667%;
   background-color: rgba(255, 255, 255, 0.8);
   color: #362E2A;
   font-size: 24px;
+  line-height: 1.25;
 }
 .home .entry-content {
-  padding: 25px 20px;
+  padding: 14px 20px;
 }
 .home .entry-content h3 {
   color: #fff;
   font-family: "Open Sans", ​sans-serif;
   font-size: 24px;
+  font-weight: bold;
+}
+.home .entry-content p {
+  margin-bottom: 2em;
 }
 .home .entry-content a {
-  font-size: 18px;
+  font-size: 22px;
+  white-space: nowrap;
 }
 .home .entry-content a:after {
   content: ' >>';
@@ -2100,11 +2106,20 @@ figure img {
   padding: 4.236em;
 }
 .home aside h3 {
+  padding: 8px;
+  background-color: #FCAF17;
   font-family: "Open Sans", ​sans-serif;
   font-size: 18px;
-  background-color: #FCAF17;
-  padding: 8px;
+  font-weight: bold;
   color: #362E2A;
+}
+.home aside .post-thumbnail {
+  max-height: 200px;
+  overflow: hidden;
+}
+.home aside .post-thumbnail img {
+  max-height: 200px;
+  width: auto;
 }
 .home aside a {
   border-bottom: none;
@@ -2133,10 +2148,4 @@ figure img {
   font-family: "Open Sans", ​sans-serif !important;
   font-size: 14px !important;
   color: #362E2A !important;
-}
-@media handheld, only screen and (min-width: 641px) {
-  .home aside img {
-    max-height: 200px;
-    overflow: hidden;
-  }
 }

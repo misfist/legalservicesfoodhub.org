@@ -33,26 +33,33 @@
 	.home-image-caption {
 		position: absolute;
 		bottom: 0;
-		padding: 28px 80px;
+		padding: 14px 80px;
 		width: 65.4306666667%;
 
 		background-color: rgba(255, 255, 255, 0.8);
 		color: $black;
 		font-size: 24px;
+		line-height: 1.25;
 	}
 
 	.entry-content {
 		@extend .col_3;
-		padding: 25px 20px;
+		padding: 14px 20px;
 		
 		h3 {
 			color: $white;
 			font-family: $sans;
 			font-size: 24px;
+			font-weight: bold;
+		}
+
+		p {
+			margin-bottom: 2em;
 		}
 
 		a {
-			font-size: 18px;
+			font-size: 22px;
+			white-space: nowrap;
 
 			&:after {
 				content: ' >>';
@@ -116,11 +123,22 @@
 		@extend .col_3;
 
 		h3 {
+			padding: 8px;
+			background-color: $secondary_color;
 			font-family: $sans;
 			font-size: 18px;
-			background-color: $secondary_color;
-			padding: 8px;
+			font-weight: bold;
 			color: $black;
+		}
+
+		.post-thumbnail {
+			max-height: 200px;
+			overflow: hidden;
+
+			img {
+				max-height: 200px;
+				width: auto;
+			}
 		}
 
 		a {
@@ -161,8 +179,8 @@
 
 		@media handheld, only screen and (min-width: 641px) {
 			img {
-				max-height: 200px;
-				overflow: hidden;
+				// max-height: 200px;
+				// overflow: hidden;
 			}
 		}
 
