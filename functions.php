@@ -150,9 +150,19 @@ function lfsh_scripts() {
  */
 
 function lfsh_excerpt_more( $more ) {
-	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...', 'lfsh' ) . '</a>';
+	return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( ' Read More', 'lfsh' ) . '</a>';
 }
 add_filter( 'excerpt_more', 'lfsh_excerpt_more' );
+
+
+/**
+ * Change excerpts to display 20 words (about 3 lines)
+ */
+
+function lfsh_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'lfsh_excerpt_length', 999 );
 
 
 
