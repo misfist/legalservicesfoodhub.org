@@ -2042,12 +2042,13 @@ figure img {
 .home .home-image-caption {
   position: absolute;
   bottom: 0;
-  padding: 14px 80px;
+  padding: 8px 80px;
   width: 65.4306666667%;
   background-color: rgba(255, 255, 255, 0.8);
   color: #362E2A;
   font-size: 24px;
   line-height: 1.25;
+  font-weight: bold;
 }
 .home .entry-content {
   padding: 14px 20px;
@@ -2103,7 +2104,12 @@ figure img {
   }
 }
 .home .widget-area {
-  padding: 4.236em;
+  padding: 4.236em 4.236em 0 4.236em;
+}
+@media handheld, only screen and (max-width: 640px) {
+  .home .widget-area {
+    padding: 2em 2em 0 2em;
+  }
 }
 .home aside h3 {
   padding: 8px;
@@ -2121,19 +2127,26 @@ figure img {
   max-height: 200px;
   width: auto;
 }
+.home aside p {
+  font-size: 14px;
+}
 .home aside a {
   border-bottom: none;
-  color: #362E2A;
+  color: #32438c;
+  font-style: italic;
 }
 .home aside ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
+.home aside .read-more {
+  display: block;
+}
 .home aside .textwidget {
   position: relative;
   padding-bottom: 56.25%;
-  height: 500px;
+  min-height: 400px;
   max-width: 100%;
 }
 .home aside .textwidget iframe {
