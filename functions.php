@@ -146,7 +146,7 @@ function lfsh_scripts() {
 
 
 /**
- * Change excerpts to display ' Read Me...' rather than [...]
+ * Change excerpts to display ' Read Me...' rather than [...]  - Pea
  */
 
 function lfsh_excerpt_more( $more ) {
@@ -156,13 +156,25 @@ add_filter( 'excerpt_more', 'lfsh_excerpt_more' );
 
 
 /**
- * Change excerpts to display 20 words (about 3 lines)
+ * Change excerpts to display 20 words (about 3 lines) - Pea
  */
 
 function lfsh_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'lfsh_excerpt_length', 999 );
+
+/**
+ * Fix home page browser title - Pea
+ */
+
+function lfsh_wp_title_for_home( $title ) {
+  if( empty( $title ) && ( is_home() || is_front_page() ) ) {
+    return __( 'Home', 'lfsh' ) . ' | ' . get_bloginfo( 'description' );
+  }
+  return $title;
+}
+add_filter( 'wp_title', 'lfsh_wp_title_for_home' );
 
 
 
