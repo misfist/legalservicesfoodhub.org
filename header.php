@@ -28,9 +28,8 @@
 
 	<?php 
 
-	if (is_home() ) {
+	if (! is_front_page() ) {
 
-	} else {
 		 $headerImage = get_post_meta($post->ID, 'header-image', true);
 			 if (!empty($headerImage)) {
 			?> 
@@ -39,16 +38,11 @@
 					<img src="<?php echo $headerImage ?>" alt="Legal Food Services Hub">
 				</div>
 			<?php
-			} else { 
-
-				?> <div class="headerBg row" style="background-image:url('<?php bloginfo('template_url'); ?>/images/legal-food-services-hub-hero-A.jpg');"></div><?php
-
-				}
-			 			}
+			} 
+		}
 
 	?>
 
-	
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'lfsh' ); ?></a>
 
 	<header id="masthead" class="header row bottom" role="banner">
