@@ -1,0 +1,34 @@
+/* 
+	==== Widgets ====
+*/
+
+// Sign-up form
+
+.textwidget {
+
+	form[id^='survey'] {
+
+		table {
+			width: 100%;
+		}
+
+		.Explicit {
+			font-weight: bold;
+		}
+
+		.AutoOptInWarningMessage {
+			font-size: 12px;
+			font-style: italic;
+		}
+
+		label {
+			font-size: 12px;
+			white-space: nowrap;
+		}
+
+		input[type='text'] {
+			max-width: 200px;
+		}
+	}
+
+}

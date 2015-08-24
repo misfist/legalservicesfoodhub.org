@@ -2012,6 +2012,27 @@ figure img {
 	==== Fonts ====
 */
 /* 
+	==== Widgets ====
+*/
+.textwidget form[id^='survey'] table {
+  width: 100%;
+}
+.textwidget form[id^='survey'] .Explicit {
+  font-weight: bold;
+}
+.textwidget form[id^='survey'] .AutoOptInWarningMessage {
+  font-size: 12px;
+  font-style: italic;
+}
+.textwidget form[id^='survey'] label {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.textwidget form[id^='survey'] input[type='text'] {
+  max-width: 200px;
+}
+
+/* 
 	==== Home ====
 */
 .home {
